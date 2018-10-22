@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CreateComponent } from './pages/create/create.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { LoginComponent } from './pages/login/login.component';
+
 import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
@@ -17,6 +19,7 @@ import { HeaderComponent } from './shared/header/header.component';
     ContactComponent,
     CreateComponent,
     ProfileComponent,
+    LoginComponent,
     HeaderComponent
 
   ],
