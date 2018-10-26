@@ -2,10 +2,21 @@
   {{title}}
 </p>
 
-<h1>{{ data.header }}</h1>
-<h2>{{ data.footer }}</h2>
+<h1>
+  {{data.header}}
+</h1>
+<p>
+  {{subtitle}}
+</p>
 
-{{subtitle}} -->
+<h2>
+  {{data.footer}}
+</h2> -->
+
+<div *ngFor='let char of characters'>
+  {{char.name}}
+</div>
+
 <div class='container'>
   <form action="#">
     <input type="text" placeholder="Type Name and Search for Cards ..." name="search" class='search-bar'>
