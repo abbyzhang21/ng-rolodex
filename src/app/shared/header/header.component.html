@@ -2,23 +2,32 @@
     <h1>rolooex</h1>
     <ul>
         <li>
-            <a routerLink='/'>Home</a>
+            <a class="one active" routerLink='/'>Home</a>
         </li>
         <li>
-            <a routerLink='/contact'>view all contacts</a>
+            <a class="two" routerLink='/contact'>view all contacts</a>
         </li>
         <li>
-            <a routerLink='/create'>Create contacts</a>
+            <a class="three" routerLink='/create'>Create contacts</a>
         </li>
         <li>
-            <a routerLink='/profile'>my profile</a>
+            <a class="four" routerLink='/profile'>{{user.username}}'s profile</a>
         </li>
         <li>
-            <a routerLink='/login'>
+            <div class="header-right">
+                <div class="logged-in" *ngIf="isLoggedIn()">
+                    <!-- Welcome, {{user.username}} -->
+                    <button (click)="logout()">Log Out</button>
+                </div>
+
+                <div class="logged-out" *ngIf=!user.loggedIn>
+                    <button (click)="login()">Log In</button>
+                </div>
+            </div>
+            <!-- <a routerLink='/login'>
                 <button>log in</button>
-            </a>
+            </a> -->
         </li>
-        <li>
-            <i class="fas fa-chevron-circle-down icon"></i>
+        <i class="fas fa-chevron-circle-down icon"></i>
     </ul>
 </div>

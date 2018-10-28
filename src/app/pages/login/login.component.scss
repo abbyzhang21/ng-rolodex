@@ -1,35 +1,40 @@
+@import '../../shared/duplicateStyle/form';
+// .login-container {
+//   display: flex;
+//   flex-flow: column wrap;
+//   align-items: center;
+//   background-color:white;
+//   height: 100%;
+//   h3 {
+//       margin: 5% auto;
+//   }
+//   .login-form {
+//       width: 400px;
+//       padding: 20px 15px;
+//       background-color: #E6E6DC;
+//       box-shadow: 2px 2px 2px 2px #ccc;
+//       border-radius: 15px;
+//   }
+// }
 
-  .login-container {
-    width: 100%;
-    max-width: 400px;
-    background-color: #81A594;
-    border-radius: 10px;
-    box-shadow: 10px 10px 2px 2px #E6E6DC;
-    margin: 20% auto;
-    padding: 15px;
-  
-    input {
-      width: 100%;
-      padding: 15px;
-      border-radius: 10px;
-      border: 0px;
-      margin-top: 10px;
-      font-size: 16px;
-    }
-  
-    .btn {
-      margin: 15px 0;
-      padding: 15px;
-      border: 0px;
-      background: #1e5799;
-      color: white;
-      font-size: 16px;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 100%;
-  
-      &:disabled {
-        background-color: #ccc;
-      }
-    }
-  }
+// input{
+//   width: 100%;
+//   border: 0;
+//   border-radius: 10px;
+//   padding: 10px;
+//   margin-bottom: 15px;
+// }
+// .btn {
+//   border: 0;
+//   color: #ddd;
+//   padding: 15px;
+//   width: 100%;
+//   font-size: 16px;
+//   background-color:darken(#81A594, 5%);
+//   border-radius: 10px;
+//   transition:background-color 0.5s ease-out;
+//   &:hover{
+//       background-color: #00628B;
+//   }
+//   &:disabled {background-color: lighten(#81A594,10%);}
+// }

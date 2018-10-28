@@ -1,3 +1,22 @@
-<p>
-    {{title}}
-</p>
+<div class='container'>
+    <h3>
+        {{title}}
+    </h3>
+    <div class="form">
+        <form action=''>
+            <input type='text' name='name' placeholder="name" [(ngModel)]="formData.name" (keyup)='validateName()'>
+            <br />
+            <input type='text' name='email' placeholder="email" [(ngModel)]="formData.email" (keyup)='validateEmail()'>
+        </form>
+
+        <!-- <div [class]="formData.name === 'abby' ? 'test': ''">
+            {{formData.name}}
+        </div>
+        <br />
+        {{formData.name}} -->
+
+        <button (click)='submit()' class='btn' [disabled]='isDisabled()'>
+            Create
+        </button>
+    </div>
+</div>

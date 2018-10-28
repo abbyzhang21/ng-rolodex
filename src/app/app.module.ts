@@ -14,7 +14,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './shared/header/header.component';
 
 import { BackendService } from './services/backend.service';
-
+import { SessionService } from './services/session.service';
+import { AuthService } from './services/auth.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,9 @@ import { BackendService } from './services/backend.service';
     HttpClientModule
   ],
   providers: [
-    BackendService
+    BackendService,
+    SessionService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BackendService } from '../../services/backend.service';
 
 @Component({
     selector: 'contact-page',
@@ -7,20 +8,15 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
     title: string = 'contact page';
-    formData: {
-        name: string,
-        email: string,
-        cell: number
-    } = {
-            name: '',
-            email: '',
-            cell: 0
-        }
+    // name: string = this.formData;
+    // // data: {} = {
+    // //     name: this.formData.characters,
+    // // }
 
     constructor() { }
 
-    submit() {
-        console.log(this.formData);
-    }
+    // submit() {
+    //     console.log(this.formData);
+    // }
 
 }

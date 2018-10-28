@@ -14,13 +14,25 @@
     ul {
         li:not(:last-child){
             display: none;
-            margin-right: 15px;
+            margin-right: 20px;
             text-transform: capitalize;
+            .one:hover {
+                border-bottom: 2px solid #CEDD3E;
+            }
+            .two:hover {
+                border-bottom: 2px solid #F27132;
+            }
+            .three:hover {
+                border-bottom: 2px solid #85C3E9;
+            }
+            .four:hover {
+                border-bottom: 2px solid #FDBE2A;
+            }
             @media only screen and (min-width: 800px) {
                 display: inline-block;
             }
             button {
-                padding: 10px 20px;
+                padding: 8px 16px;
                 font-size: 16px;
                 text-align: center;
                 color: #fff;
@@ -44,14 +56,15 @@
 a {
     text-decoration: none;
     color: #222;
-    font-size: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
     &:hover{
         color: #81A594; 
     }
   }
 
   .icon {
-      size:3px;
+      size:2px;
       color:#81A594;
       @media only screen and (min-width: 800px) {
         display: none;

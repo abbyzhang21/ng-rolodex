@@ -1,16 +1,25 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
-    selector: 'login-page',
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.scss']
 })
-
 export class LoginComponent {
+    title: string = 'Log In';
+    loginFormData = {
+        username: '',
+        password: ''
+    };
 
-    title: string = 'Login Page';
-
-    constructor() {
-
+    constructor(private auth: AuthService) { }
+    login() {
+        this.auth.login(this.loginFormData)
+            .then(() => {
+                console.log('User logged in');
+            })
+            .catch((err) => {
+                console.log(err);
+            });
     }
 }

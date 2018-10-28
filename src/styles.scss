@@ -1,30 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Kodchasan');
-@media screen and (max-width: 100px) {
-  .topnav{background-color: pink;}
-  .topnav li:not(:last-child) {display: none;}
-  // .topnav .icon {
-  // //   float: right;
-  // //   display: block;
 
-}
-@media screen and (max-width: 200px) {
-  .topnav.responsive{
-      flex-wrap: nowrap;
-      background-color: red;
-      justify-content: start;
-  }
-  .topnav.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+//house cleaning
 html {
     box-sizing: border-box;
     margin: 0;
@@ -45,4 +22,9 @@ html {
     margin: 0 auto;
     font-family: 'Kodchasan', sans-serif;
     height: 100%;
+  }
+
+  //global form style
+  %shared {
+    background-color: green;
   }
