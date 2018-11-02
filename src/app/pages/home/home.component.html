@@ -19,6 +19,13 @@
 
 <div class='container'>
   <form action="#">
-    <input type="text" placeholder="Type Name and Search for Cards ..." name="search" class='search-bar'>
+    <input type="text" placeholder="Type Name and Search for Cards ..." name="search" class='search-bar' ng-model="searchText"
+      autofocus>
   </form>
+  <!-- <tr ng-repeat="friend in characters | filter:searchText">
+    <td>{{friend.char.name}}</td>
+    <td>{{friend.id}}</td>
+
+    <td>{{friend.phone}}</td> -->
+  <!-- </tr> -->
 </div>

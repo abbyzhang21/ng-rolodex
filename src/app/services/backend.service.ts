@@ -5,19 +5,19 @@ import { HttpClient } from '@angular/common/http';
     providedIn: 'root'
 })
 export class BackendService {
-    baseUrl: string = 'https://swapi.co/api/';
-
-    characters: any[] = [];
+    // characters: object[];
 
     constructor(private http: HttpClient) { }
 
-    getCharacter(id: number) {
-        const url = this.baseUrl + 'people/' + id;
+    getCharacter() {
+        const url = "http://localhost:8008" + '/name';
         return this.http.get(url).toPromise();
+
+
     }
-    addCharacter(character) {
-        this.characters.push(character);
-    }
+    // addCharacter(character) {
+    //     this.characters.push(character);
+    // }
     register(data) {
         return Promise.resolve({});
     }

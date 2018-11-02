@@ -1,8 +1,30 @@
-<p>
-    {{title}}
-</p>
+<!-- <button routerLink='/addForm'>Create New Contact</button>
+<div id='liveSearch'> {{value}} </div>
+<div class='contacts'>
+    <div *ngFor='let test of testNames' class='test'>
+        <div class='testName'>{{ test.name }}
+        </div>
+        <div class='testButtons'>
+            <button class='moreInfoButton' (click)='moreInfo()'>More Info</button>
+            <button class='editButton'>Edit</button>
+            <button class='deleteButton'>Delete</button>
+        </div>
+    </div>
+</div> -->
 
 
 <!-- <div *ngFor='let char of characters'>
     {{char.name}}
 </div> -->
+<div class='container'>
+    <div class="flip-box" *ngFor='let char of characters'>
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                {{char.name}}
+            </div>
+            <div class="flip-box-back">
+
+            </div>
+        </div>
+    </div>
+</div>

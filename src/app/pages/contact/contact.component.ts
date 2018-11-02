@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BackendService } from '../../services/backend.service';
 
 @Component({
@@ -6,17 +6,24 @@ import { BackendService } from '../../services/backend.service';
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
-    title: string = 'contact page';
-    // name: string = this.formData;
-    // // data: {} = {
-    // //     name: this.formData.characters,
-    // // }
+export class ContactComponent implements OnInit {
+    characters = [];
 
-    constructor() { }
+    constructor(private backend: BackendService) {
 
-    // submit() {
-    //     console.log(this.formData);
-    // }
+    }
+    ngOnInit() {
+        // this.characters = this.backend.characters;
 
+        // this.backend.addCharacter({ name: 'abby' });
+
+
+
+        this.backend.getCharacter()
+            .then((data) => {
+                console.log(data);
+                this.characters = data;
+                this.characters.push({ name: 'ola' });
+            });
+    }
 }
