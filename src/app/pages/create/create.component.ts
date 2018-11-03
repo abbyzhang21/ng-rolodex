@@ -11,11 +11,19 @@ export class CreateComponent {
     title: string = 'Create New Contact';
     formData: {
         name: string,
+        address: string,
+        mobile: string,
         email: string,
+        instagram: string,
+        github: string,
         class: string
     } = {
             name: '',
+            address: '',
+            mobile: '',
             email: '',
+            instagram: '',
+            github: '',
             class: 'test'
         };
     validName: boolean = false;
@@ -59,5 +67,6 @@ export class CreateComponent {
 
     submit() {
         console.log(this.formData);
+
     }
 }

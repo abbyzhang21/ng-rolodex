@@ -3,10 +3,19 @@
         {{title}}
     </h3>
     <div class="form">
-        <form action=''>
+        <form ng-submit="submit()">
             <input type='text' name='name' placeholder="name" [(ngModel)]="formData.name" (keyup)='validateName()'>
             <br />
+            <input type='text' name='address' placeholder="address" [(ngModel)]="formData.address">
+            <br />
+            <input type='text' name='mobile' placeholder="mobile" [(ngModel)]="formData.mobile">
+            <br />
             <input type='text' name='email' placeholder="email" [(ngModel)]="formData.email" (keyup)='validateEmail()'>
+            <br />
+            <input type='text' name='instagram' placeholder="instagram" [(ngModel)]="formData.instagram">
+            <br />
+            <input type='text' name='github' placeholder="github" [(ngModel)]="formData.github">
+
         </form>
 
         <!-- <div [class]="formData.name === 'abby' ? 'test': ''">

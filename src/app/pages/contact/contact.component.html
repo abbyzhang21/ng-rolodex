@@ -1,29 +1,28 @@
-<!-- <button routerLink='/addForm'>Create New Contact</button>
-<div id='liveSearch'> {{value}} </div>
-<div class='contacts'>
-    <div *ngFor='let test of testNames' class='test'>
-        <div class='testName'>{{ test.name }}
-        </div>
-        <div class='testButtons'>
-            <button class='moreInfoButton' (click)='moreInfo()'>More Info</button>
-            <button class='editButton'>Edit</button>
-            <button class='deleteButton'>Delete</button>
-        </div>
-    </div>
-</div> -->
-
-
-<!-- <div *ngFor='let char of characters'>
-    {{char.name}}
-</div> -->
 <div class='container'>
     <div class="flip-box" *ngFor='let char of characters'>
         <div class="flip-box-inner">
             <div class="flip-box-front">
                 {{char.name}}
+
             </div>
             <div class="flip-box-back">
-
+                <img src="{{char.link}}" alt="">
+                <li>
+                    <i class="fas fa-map-marker-alt" style="color:#CEDD3E"></i>
+                    {{char.address}}
+                </li>
+                <li>
+                    <i class="fas fa-phone-volume" style="color:#F27132"></i>
+                    {{char.mobile}}
+                </li>
+                <li>
+                    <i class="far fa-envelope" style="color:#85C3E9"></i>
+                    {{char.email}}
+                </li>
+                <li>
+                    <i class="fab fa-instagram" style="color:#FDBE2A"></i>
+                    {{char.instagram}}
+                </li>
             </div>
         </div>
     </div>

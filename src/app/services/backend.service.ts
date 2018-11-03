@@ -10,7 +10,7 @@ export class BackendService {
     constructor(private http: HttpClient) { }
 
     getCharacter() {
-        const url = "http://localhost:8008" + '/name';
+        const url = "http://localhost:4000" + '/contact';
         return this.http.get(url).toPromise();
 
 

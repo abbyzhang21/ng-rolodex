@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     footer: 'this is a footer'
   };
 
-  characters = [];
+  characters: any;
 
   constructor(private backend: BackendService) {
     const subtitle: string = 'It is a SUBTITLE';

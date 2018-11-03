@@ -7,7 +7,7 @@ import { BackendService } from '../../services/backend.service';
     styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-    characters = [];
+    characters: any;
 
     constructor(private backend: BackendService) {
 
